@@ -23,6 +23,7 @@ public class CountriesServiceImpl implements CountriesService {
             country.setCountryName("Türkiye");
             country.setCountryCode("TR");
             country.setCities(getTrCityList());
+            country.setThemes(getThemeList());
             countryList.add(country);
 
             country = new Country();
@@ -30,6 +31,7 @@ public class CountriesServiceImpl implements CountriesService {
             country.setCountryName("IT");
             country.setCountryCode("Italy");
             country.setCities(getItCityList());
+            country.setThemes(getThemeList());
             countryList.add(country);
 
             country = new Country();
@@ -37,8 +39,8 @@ public class CountriesServiceImpl implements CountriesService {
             country.setCountryName("DE");
             country.setCountryCode("Germany");
             country.setCities(getGerCityList());
-            countryList.add(country);
             country.setThemes(getThemeList());
+            countryList.add(country);
 
         } catch (Exception e) {
             throw new Exception(e.getMessage());
