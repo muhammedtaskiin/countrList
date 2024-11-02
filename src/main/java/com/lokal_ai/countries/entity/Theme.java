@@ -10,7 +10,6 @@ import lombok.Setter;
 public class Theme {
 //    @Id
 //    private Long id;
-    private String city_code;
     private String theme_id;
     private String theme_def_letter;
     private String theme_def;
